@@ -5,7 +5,9 @@ cd "$SNAPP_APP_DATA_PATH"
 
 golang-static-http &
 
+export LD_LIBRARY_PATH=$SNAP_APP_PATH/usr/lib/x86_64-linux-gnu/mesa:$LD_LIBRARY_PATH
+
 while :; do
-    $SNAP_APP_PATH/bin/face_detect.py $SNAP_APP_PATH/bin/logic.xml
+    python2 $SNAP_APP_PATH/bin/face_detect.py $SNAP_APP_PATH/bin/logic.xml
     sleep 3
 done
