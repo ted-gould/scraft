@@ -1,0 +1,6 @@
+name: wfd
+version: 7
+vendor: You <you@example.com>
+services:
+- name: wfd
+  start: bin/wfd

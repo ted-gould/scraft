@@ -1,0 +1,16 @@
+parts:
+  golang-static-http:
+    plugin: go1.4-project
+    source: git://github.com/mikix/golang-static-http
+  webfd:
+    plugin: python2-project
+    source: git://github.com/pedrococa/webfd.git
+  logic.xml:
+    plugin: copy
+    files:
+      logic.xml: bin/logic.xml
+  glue:
+    plugin: copy
+    files:
+      wfd: bin/wfd
+snappy-metadata: meta
