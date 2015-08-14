@@ -6,6 +6,6 @@ cd "$SNAPP_APP_DATA_PATH"
 golang-static-http &
 
 while :; do
-    ./face_detect.py logic.xml
+    $SNAP_APP_PATH/bin/face_detect.py $SNAP_APP_PATH/bin/logic.xml
     sleep 3
 done

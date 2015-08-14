@@ -5,6 +5,7 @@ parts:
   webfd:
     plugin: ubuntu
     packages: [python-dev, python-opencv, python-numpy]
+    recommends: True
   logic.xml:
     plugin: copy
     files:

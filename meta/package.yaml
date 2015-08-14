@@ -4,3 +4,5 @@ vendor: You <you@example.com>
 services:
 - name: wfd
   start: bin/wfd
+  caps:
+    - network-service
